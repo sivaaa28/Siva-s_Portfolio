@@ -1,0 +1,16 @@
+.education {
+    padding: 20px;
+    margin: 10px;
+    background: #fff;
+    border-radius: 8px;
+  }
+  
+  .education ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .education ul li {
+    margin: 10px 0;
+  }
+  

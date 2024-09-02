@@ -1,0 +1,16 @@
+.skills {
+    padding: 20px;
+    margin: 10px;
+    background: #fff;
+    border-radius: 8px;
+  }
+  
+  .skills ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .skills ul li {
+    margin: 10px 0;
+  }
+  

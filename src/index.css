@@ -1,0 +1,19 @@
+/* Ensure the body and html have proper height */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/* Style for the fixed image */
+.fixed-image {
+  position: fixed; /* Keeps the image fixed in the viewport */
+  top: 0; /* Adjust based on where you want it to appear */
+  left: 0; /* Adjust based on where you want it to appear */
+  width: 100vw; /* Makes the image cover the viewport width */
+  height: 100vh; /* Makes the image cover the viewport height */
+  object-fit: cover; /* Ensures the image covers the entire area */
+  opacity: 0.5; /* Adjust opacity to make the image transparent */
+  pointer-events: none; /* Ensures the image does not block interactions */
+  z-index: -1; /* Places the image behind other content */
+}

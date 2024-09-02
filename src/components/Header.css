@@ -1,0 +1,73 @@
+.header {
+  position: relative;
+  text-align: center;
+  color: white;
+  overflow: hidden; /* Hide overflow to keep the cover picture within bounds */
+}
+
+.cover-pic {
+  width: 100%;
+  height: 300px; /* Adjust height as needed */
+  object-fit: cover; /* Ensures the image covers the container */
+  display: block;
+}
+
+.profile-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 1; /* Ensures the profile container is on top of the cover image */
+}
+
+.profile-pic {
+  width: 150px; /* Base size of the profile picture */
+  height: 150px; /* Base size of the profile picture */
+  border-radius: 50%;
+  object-fit: cover; /* Ensures the image fits within the circle */
+  transition: transform 0.3s ease-in-out;
+}
+
+.profile-pic:hover {
+  transform: scale(1.05); /* Zoom effect on hover to 40% larger */
+}
+
+nav {
+  margin-top: 20px;
+}
+
+.header-nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center; /* Center the navigation links */
+  gap: 10px; /* Space between the cards */
+}
+
+.header-nav ul li {
+  display: inline;
+}
+
+.header-nav ul li a {
+  display: block;
+  background: #333; /* Card background color */
+  color: white;
+  text-decoration: none;
+  font-size: 16px; /* Adjust font size as needed */
+  padding: 10px 15px; /* Padding inside the card */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Shadow effect */
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.header-nav ul li a:hover {
+  background-color: #444; /* Darker background on hover */
+  transform: translateY(-3px); /* Lift effect on hover */
+}
+
+/* Optional: Adding some margin around the entire header */
+.header-container {
+  margin: 20px auto;
+  max-width: 1200px; /* Max width for the header */
+}

@@ -1,0 +1,23 @@
+.about {
+    background: #f4f4f4;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    animation: fadeIn 1s ease-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .about {
+      padding: 15px;
+    }
+  }
+  
